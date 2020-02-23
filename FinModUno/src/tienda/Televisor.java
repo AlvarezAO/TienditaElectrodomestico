@@ -4,7 +4,7 @@ package tienda;
  * Clase Televisor.
  * @author Alvaro Alvarez
  * @version 2.0
- * @see
+ * @see https://github.com/AlvarezAO/TienditaElectrodomestico
  */
 	public class Televisor extends Electrodomestico {
 		
@@ -38,6 +38,9 @@ package tienda;
 			return resolucion;
 		}
 		
+		/**
+		 * Metodo precio final, llama metodo de clase padre
+		 */
 		public double precioFinal() {
 			double precioTV = 0;
 			double precioTDT = 0;

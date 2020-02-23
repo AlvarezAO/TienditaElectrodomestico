@@ -1,9 +1,19 @@
 package tienda;
 
+/**
+ * Clase TiendaMostrar, imprime proyecto.
+ * @author Alvaro Alvarez
+ * @version 2.0
+ * @see https://github.com/AlvarezAO/TienditaElectrodomestico
+ */
+
 public class TiendaMostrar {
 
 	public static void main(String[] args) {
 	
+		/**
+		 * Creacion Array de 10 elementos
+		 */
 		Electrodomestico lista[] = new Electrodomestico[10];
 		
 				
@@ -18,6 +28,11 @@ public class TiendaMostrar {
 		lista[8] = new Televisor();
 		lista[9] = new Electrodomestico();
 		
+		
+		/**
+		 * se recorre la lista y se usa instanceof para separar la Clase
+		 * televisor del Array e imprime.
+		 */
 		System.out.println("\nTelevisor");
 		double totalTV = 0;
 		for (int i = 0; i<lista.length;i++) {			
@@ -30,6 +45,11 @@ public class TiendaMostrar {
 		System.out.println("------------");
 		System.out.println(totalTV);
 
+		
+		/**
+		 * se recorre la lista y se usa instanceof para separar la Clase
+		 * Lavadorar del Array e imprime.
+		 */
 		System.out.println("\nLavadora");
 		double totalLavadora = 0;
 		for (int i = 0; i<lista.length;i++) {
@@ -41,6 +61,12 @@ public class TiendaMostrar {
 		System.out.println("------------");
 		System.out.println(totalLavadora);
 		
+		
+		/**
+		 * se recorre la lista y se usa instanceof para separar la Clase
+		 * electrodomestico del Array e imprime.
+		 * En este caso, todos los objetos del Array son electrodomesticos
+		 */
 		System.out.println("\nElectrodomestico");
 		double totalElectro = 0;
 		for (int i = 0; i<lista.length;i++) {

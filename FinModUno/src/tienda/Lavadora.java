@@ -4,7 +4,7 @@ package tienda;
  * Clase Lavadora.
  * @author Alvaro Alvarez
  * @version 2.0
- * @see
+ * @see https://github.com/AlvarezAO/TienditaElectrodomestico
  */
 
 public class Lavadora extends Electrodomestico {
